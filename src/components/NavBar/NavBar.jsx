@@ -14,7 +14,7 @@ const NavBar = () => {
       
 
     return (
-        <nav className="text-black md:text-xl md:px-5 bg-violet-300 p-6">
+        <nav className="text-black md:text-xl md:px-5 bg-violet-300 p-6 md:space-x-6">
           <div  className="md:hidden text-2xl" onClick={()=> setOpen(!open)}>
             {
                 open === true ?   
@@ -23,7 +23,7 @@ const NavBar = () => {
             }
         
           </div>
-            <ul className={`md:flex duration-1000 absolute md:sticky
+            <ul className={`md:flex md:gap-6 duration-1000 absolute md:sticky
             ${open ? 'top-16' : '-top-60'}
             bg-violet-300 px-6`}>
             {

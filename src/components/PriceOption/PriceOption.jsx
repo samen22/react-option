@@ -13,7 +13,7 @@ const PriceOption = ({option}) => {
                     features.map((feature, idx)=> <Feature key={idx} feature={feature}></Feature>)
                 }
             </div>
-            <button className='bg-emerald-600 mt-12 w-full rounded-lg py-2 font-bold hover:bg-emerald-900 text-white'>Buy Now</button>
+            <button className='bg-emerald-600 mt-12 w-full rounded-lg py-2 font-bold hover:bg-emerald-900 text-white'>Buy now</button>
         </div>
     );
 };
