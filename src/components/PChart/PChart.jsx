@@ -1,37 +1,37 @@
-import { Cell, Pie, PieChart } from "recharts";
+import { Cell, Pie, PieChart, Tooltip } from "recharts";
 
 const PChart = () => {
 
   const data01 = [
     {
-      "name": "Group A",
+      "name": "Male 21-45",
       "value": 20,
       "color": "#65a30d"
     },
     {
-      "name": "Group B",
+      "name": "Male 65+",
       "value": 25,
       "color": "#f87171"
     },
     {
-      "name": "Group C",
+      "name": "Others",
       "value": 55,
       "color": "#2563eb"
     }
   ];
   const data02 = [
     {
-      "name": "Group D",
+      "name": "Female 18-24",
       "value": 19,
       "color": "#65a30d"
     },
     {
-      "name": "Group E",
+      "name": "Female 55+",
       "value": 31,
       "color": "#f87171"
     },
     {
-      "name": "Group F",
+      "name": "Others",
       "value": 50,
       "color": "#2563eb"
     }
@@ -48,6 +48,7 @@ const PChart = () => {
               data01.map((entry, idx)=> (<Cell key={idx} fill={entry.color}></Cell>))
             }
           </Pie>
+          <Tooltip/>
         </PieChart>
       </div>
       <div>
@@ -58,6 +59,7 @@ const PChart = () => {
               data02.map((entry, idx)=> (<Cell key={idx} fill={entry.color}></Cell>))
             }
           </Pie>
+          <Tooltip/>
         </PieChart>
       </div>
       </div>
